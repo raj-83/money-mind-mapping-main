@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# 💰 Personal Finance Visualizer
 
-## Project info
+A modern web app to track personal expenses, visualize spending patterns, and stay within budget. Built using **Next.js**, **React**, **shadcn/ui**, **Recharts**, and **Supabase (PostgreSQL)**.
 
-**URL**: 
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+### ✅ Stage 1: Basic Transaction Tracking
+- Add, edit, delete transactions (amount, date, description)
+- Transaction list view
+- Monthly expenses bar chart
+- Basic form validation with error states
 
-**Use Lovable**
+### ✅ Stage 2: Categories
+- All Stage 1 features +
+- Predefined categories (Food, Travel, Rent, etc.)
+- Pie chart showing category breakdown
+- Dashboard summary:
+  - Total expenses
+  - Category-wise expense
+  - Most recent transactions
+
+### ✅ Stage 3: Budgeting
+- Set monthly budgets per category
+- Budget vs actual comparison chart
+- Simple spending insights based on your behavior
+
+---
+
+## 🧱 Tech Stack
+
+| Tech            | Description                                |
+|-----------------|--------------------------------------------|
+| **Next.js**     | React framework for full-stack development |
+| **React**       | Component-based UI                         |
+| **shadcn/ui**   | Elegant UI component library               |
+| **Recharts**    | Charting library                           |
+| **Supabase**    | Backend-as-a-Service with PostgreSQL       |
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/personal-finance-visualizer.git
+cd personal-finance-visualizer
 
 
+Install dependencies
 
-Changes made via Lovable will be committed automatically to this repo.
+bash
+Copy
+Edit
+npm install
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Set up environment variables
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+bash
+Copy
+Edit
+touch .env.local
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Run the development server
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+bash
+Copy
+Edit
 npm run dev
-```
+Open http://localhost:3000 to view the app in your browser.
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/53acc1d8-92a5-4008-988e-1815e3b2ce87) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+📁 Project Structure
+pgsql
+Copy
+Edit
+.
+├── components/
+│   └── forms, charts, cards
+├── lib/
+│   └── supabaseClient.ts
+├── pages/
+│   └── index.tsx, dashboard.tsx, api/
+├── utils/
+├── public/
+├── styles/
+└── types/
