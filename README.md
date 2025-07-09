@@ -8,6 +8,8 @@ A modern web app to track personal expenses, visualize spending patterns, and st
 
 ### ✅ Stage 1: Basic Transaction Tracking
 - Add, edit, delete transactions (amount, date, description)
+
+- 
 - Transaction list view
 - Monthly expenses bar chart
 - Basic form validation with error states
